@@ -74,25 +74,21 @@
 
       <div class="album py-5">
         <div class="container">
-          <h1>Recent posts</h1>
+          <h1>Post</h1>
           </br>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 g-4">
 
-            {% for blog_post in blog_posts %}
-
             <div class="col">
               <div class="card text-dark mb-3" style="max-width: 28rem max-height: 150rem">
-                <a class = "card-link" href="{% url 'id' blog_post.id %}"><h3>{{ blog_post.title }}</h3></a>
-                <img class="card-img-top"  src="{{ blog_post.image.url }}" />
+                <h3>{{ post.title }}</h3>
+                <img class="card-img-top"  src="{{ post.image.url }}" />
                 <div class="card-body">
-                  <p class="card-text">{{ blog_post.summary_text }}</p>
-                  <p class="card-text" >{{ blog_post.date }}</p>
+                  <p class="card-text">{{ post.text }}</p>
+                  <p class="card-text" >{{ post.date }}</p>
                 </div>
 
               </div>
             </div>
-
-            {% endfor %}
 
           </div>
 

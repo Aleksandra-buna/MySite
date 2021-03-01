@@ -5,4 +5,7 @@ class Post(models.Model):
     date = models.DateTimeField()
     text = models.TextField(max_length=50000)
     image = models.ImageField(upload_to='event_images/')
+
+    def summary_text(self):
+        return self.text[:500] + "..."
 # Create your models here.

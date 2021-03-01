@@ -22,7 +22,7 @@ import events.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', events.views.home, name='home'),
+    path('', events.views.home, name='home'), #name= nuzhno dlya ukazania link v html file
     path('blog/', include('blog.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
