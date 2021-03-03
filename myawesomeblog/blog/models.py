@@ -8,4 +8,8 @@ class Post(models.Model):
 
     def summary_text(self):
         return self.text[:500] + "..."
+
+    #shows title at admin panel in 'Blog'
+    def __str__(self):
+        return self.title
 # Create your models here.
