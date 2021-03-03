@@ -1,0 +1,18 @@
+body {
+    background: url(fancy-pants.jpg)
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+
+.card-text {
+    color: black;
+}
+
+
